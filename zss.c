@@ -1,4 +1,4 @@
-#include "platform.h"
+#include "zss.h"
 
 enum {
     ZSS_MODE_RAW, ZSS_MODE_NUM
@@ -23,7 +23,7 @@ void zss_set_num(int num)
 void zss_update(void)
 {
     static int curr_digit = 0;
-    int i, j, n;
+    int i, j;
     static int num;
 
     for(i = 0; i < g.cfg.digits; i++)
